@@ -121,20 +121,20 @@ position = Vector2(597, 500)
 [node name="Spikes6" parent="fire" unique_id=2068692825 instance=ExtResource("3_osc7o")]
 position = Vector2(561, 505)
 
-[node name="LevelExit" parent="." instance=ExtResource("4_exit")]
-position = Vector2(1200, 250)
+[node name="LevelExit" parent="." unique_id=1260192919 instance=ExtResource("4_exit")]
+position = Vector2(1197, 192)
 
-[node name="LuckyBlock" parent="." instance=ExtResource("5_lucky")]
+[node name="LuckyBlock" parent="." unique_id=1954865324 instance=ExtResource("5_lucky")]
 position = Vector2(420, 470)
 
-[node name="BouncePad1" parent="." instance=ExtResource("6_pad")]
+[node name="BouncePad1" parent="." unique_id=1161150306 instance=ExtResource("6_pad")]
 position = Vector2(520, 500)
 
-[node name="BouncePad2" parent="." instance=ExtResource("6_pad")]
+[node name="BouncePad2" parent="." unique_id=364342015 instance=ExtResource("6_pad")]
 position = Vector2(760, 420)
 
-[node name="BouncePad3" parent="." instance=ExtResource("6_pad")]
+[node name="BouncePad3" parent="." unique_id=1329293866 instance=ExtResource("6_pad")]
 position = Vector2(980, 360)
 
-[node name="ControlGlitch1" parent="." instance=ExtResource("7_glitch")]
+[node name="ControlGlitch1" parent="." unique_id=1533519123 instance=ExtResource("7_glitch")]
 position = Vector2(650, 470)

@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dls8lq25de4fv"]
 
-[ext_resource type="Texture2D" uid="uid://dbf81faa36lqe" path="res://assets/imgs/platforms/1_Industrial_Tileset_1C.png" id="2_wjk5u"]
+[ext_resource type="Texture2D" uid="uid://bub431vx0x5br" path="res://BossFight/1_Industrial_Tileset_1C.png" id="2_wjk5u"]
 [ext_resource type="PackedScene" uid="uid://dfrfdu1inqlg0" path="res://scenes/fire.tscn" id="3_osc7o"]
 [ext_resource type="Texture2D" uid="uid://bcg383q1cor4y" path="res://assets/imgs/platforms/240_F_1763880074_6QJR9z1SoMxtvEf7WoJnDVIjpUE7avRm.jpg" id="3_xy1qu"]
 [ext_resource type="PackedScene" path="res://scenes/level_exit.tscn" id="4_exit"]
@@ -121,23 +121,23 @@ position = Vector2(597, 500)
 [node name="Spikes6" parent="fire" unique_id=2068692825 instance=ExtResource("3_osc7o")]
 position = Vector2(561, 505)
 
-[node name="LevelExit" parent="." instance=ExtResource("4_exit")]
-position = Vector2(1200, 250)
+[node name="LevelExit" parent="." unique_id=2129319732 instance=ExtResource("4_exit")]
+position = Vector2(1187, 75)
 
-[node name="LuckyBlock" parent="." instance=ExtResource("5_lucky")]
+[node name="LuckyBlock" parent="." unique_id=115658359 instance=ExtResource("5_lucky")]
 position = Vector2(420, 470)
 
-[node name="BouncePad1" parent="." instance=ExtResource("6_pad")]
+[node name="BouncePad1" parent="." unique_id=896393628 instance=ExtResource("6_pad")]
 position = Vector2(520, 500)
 
-[node name="BouncePad2" parent="." instance=ExtResource("6_pad")]
+[node name="BouncePad2" parent="." unique_id=1810374987 instance=ExtResource("6_pad")]
 position = Vector2(760, 420)
 
-[node name="BouncePad3" parent="." instance=ExtResource("6_pad")]
+[node name="BouncePad3" parent="." unique_id=1387687557 instance=ExtResource("6_pad")]
 position = Vector2(980, 360)
 
-[node name="ControlGlitch1" parent="." instance=ExtResource("7_glitch")]
+[node name="ControlGlitch1" parent="." unique_id=135916698 instance=ExtResource("7_glitch")]
 position = Vector2(650, 470)
 
-[node name="ControlGlitch2" parent="." instance=ExtResource("7_glitch")]
+[node name="ControlGlitch2" parent="." unique_id=28757054 instance=ExtResource("7_glitch")]
 position = Vector2(900, 330)
