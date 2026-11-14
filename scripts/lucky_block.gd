@@ -37,11 +37,11 @@ func _on_body_entered(body: Node) -> void:
 		return
 
 	if body.get("reset_anchors") != null and body.reset_anchors > 0:
-		# High-stakes trade: spend one anchor for a random benefit.
+		# High-stakes trade: spend one anchor for a random effect.
 		body.reset_anchors -= 1
 
-		var grant_bounce := randf() < 0.5
-		if grant_bounce:
+		var roll := randf()
+		if roll < 0.34:
 			if body.has_method("restore_bounce"):
 				body.restore_bounce()
 			else:
@@ -49,13 +49,20 @@ func _on_body_entered(body: Node) -> void:
 				body.set("bounce_tuning_enabled", true)
 			_show_reward("BOUNCE!", Color(0.5, 1, 0.6, 1))
 			print("Lucky Block: bounce restored. Anchors left: ", body.reset_anchors, " (use ]/[ or +/- to adjust bounce)")
-		else:
+		elif roll < 0.67:
 			if body.has_method("restore_default_controls"):
 				body.restore_default_controls()
 			elif body.has_method("restore_defaults"):
 				body.restore_defaults()
 			_show_reward("CONTROLS!", Color(0.6, 0.9, 1, 1))
 			print("Lucky Block: controls restored. Anchors left: ", body.reset_anchors)
+		else:
+			if body.has_method("apply_control_glitch"):
+				body.apply_control_glitch("random")
+			elif body.has_method("invert_horizontal_controls"):
+				body.invert_horizontal_controls()
+			_show_reward("GLITCH!", Color(1, 0.55, 1, 1))
+			print("Lucky Block: controls glitched! Anchors left: ", body.reset_anchors)
 
 		if consume_on_use:
 			is_active = false

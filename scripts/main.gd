@@ -12,6 +12,7 @@ extends Node2D
 var current_level_index: int = 0
 var current_level: Node = null
 var _is_transitioning: bool = false
+var _random_glitch_timer: float = 0.0
 
 @onready var level_container: Node2D = $LevelContainer
 @onready var player: CharacterBody2D = $Player
@@ -19,12 +20,14 @@ var _is_transitioning: bool = false
 
 
 func _ready() -> void:
+	randomize()
 	load_level(current_level_index)
 	_update_hud()
 
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	_update_hud()
+	_process_random_control_glitch(delta)
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -116,7 +119,22 @@ func _reset_player() -> void:
 			player.restore_default_controls()
 		if player.has_node("AnimatedSprite2D"):
 			player.get_node("AnimatedSprite2D").play("idle")
+	_random_glitch_timer = randf_range(8.0, 16.0)
 	_update_hud()
+
+
+func _process_random_control_glitch(delta: float) -> void:
+	if _is_transitioning or not player or not player.alive:
+		return
+	_random_glitch_timer -= delta
+	if _random_glitch_timer > 0.0:
+		return
+	# Random control glitches can happen during gameplay.
+	if player.has_method("apply_control_glitch"):
+		player.apply_control_glitch("random")
+	elif player.has_method("invert_horizontal_controls"):
+		player.invert_horizontal_controls()
+	_random_glitch_timer = randf_range(10.0, 20.0)
 
 
 func _update_hud() -> void:
@@ -128,7 +146,7 @@ func _update_hud() -> void:
 	var jump_vel = player.get("jump_velocity") if player and ("jump_velocity" in player) else "?"
 	var controls_state = player.get_control_state_text() if player and player.has_method("get_control_state_text") else "normal"
 	controls_label.text = "BOUNCE to survive! Move: A/Left, D/Right   Jump/Bounce: Space/Enter   Restart: R   Levels: N/P\n" + \
-		"Controls can glitch during play. Lucky Block: 1 anchor -> restore controls OR restore bounce\n" + \
+		"Controls can glitch randomly or from Lucky Blocks/triggers. Lucky Block (1 anchor): restore controls, restore bounce, or glitch\n" + \
 		"After bounce: ] / = / Numpad+ = higher jump,   [ / - / Numpad- = lower jump\n" + \
 		"Anchors: %s   Bounce: %s   Bounce tuning: %s   Jump velocity: %s   Controls: %s" % [str(anchors), str(bounce), str(tuning), str(jump_vel), str(controls_state)]
 
