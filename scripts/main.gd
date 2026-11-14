@@ -63,6 +63,13 @@ func load_level(index: int) -> void:
 		return
 
 	_is_transitioning = false
+
+	# If we've progressed past the last level, show the end screen.
+	if index >= levels.size():
+		current_level_index = levels.size()
+		_show_end_screen()
+		return
+
 	current_level_index = wrapi(index, 0, levels.size())
 
 	# Special integrated boss fight level runs as its own scene.
