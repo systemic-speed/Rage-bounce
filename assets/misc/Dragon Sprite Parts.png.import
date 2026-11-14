@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2yf0e0ilurfg"
-path="res://.godot/imported/Anim_Robot_Idle1_v1.1_spritesheet.png-42f90da9de5226181e3d646fbe59902a.ctex"
+uid="uid://3810s0c2wo38"
+path="res://.godot/imported/Dragon Sprite Parts.png-92748150d841fb0f2c12fedfba056b41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imgs/charecter/Anim_Robot_Idle1_v1.1_spritesheet.png"
-dest_files=["res://.godot/imported/Anim_Robot_Idle1_v1.1_spritesheet.png-42f90da9de5226181e3d646fbe59902a.ctex"]
+source_file="res://assets/misc/Dragon Sprite Parts.png"
+dest_files=["res://.godot/imported/Dragon Sprite Parts.png-92748150d841fb0f2c12fedfba056b41.ctex"]
 
 [params]
 

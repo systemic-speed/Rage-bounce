@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3810s0c2wo38"
-path="res://.godot/imported/Dragon Sprite Parts.png-2ea8398c390b33290c8b56c5d5a402d0.ctex"
+uid="uid://cdoyldfqw6qta"
+path="res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-ca1b59f41976f3cc874d1cbb7dd10d44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Dragon Sprite Parts.png"
-dest_files=["res://.godot/imported/Dragon Sprite Parts.png-2ea8398c390b33290c8b56c5d5a402d0.ctex"]
+source_file="res://assets/imgs/character/Anim_Robot_Jump1_v1.1_spritesheet.png"
+dest_files=["res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-ca1b59f41976f3cc874d1cbb7dd10d44.ctex"]
 
 [params]
 

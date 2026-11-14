@@ -7,3 +7,6 @@ res://scenes/levels/level_0.tscn
 res://scenes/main.tscn
 res://scenes/spikes.tscn
 res://scenes/fire.tscn
+res://scenes/fire.gd
+res://scenes/main.gd
+res://scripts/fire.gd

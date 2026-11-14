@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dfrfdu1inqlg0"]
 
 [ext_resource type="Texture2D" uid="uid://cph7qua72yfwf" path="res://assets/imgs/enemy/fire-16px_strip8.png" id="1_5pg7g"]
+[ext_resource type="Script" uid="uid://pw3i3cwi438t" path="res://scripts/fire.gd" id="1_xqmqg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xbcdo"]
 atlas = ExtResource("1_5pg7g")
@@ -73,18 +74,21 @@ height = 48.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xbcdo"]
 size = Vector2(27, 24)
 
-[node name="Spikes" type="StaticBody2D" unique_id=275088813]
+[node name="Area2D" type="Area2D" unique_id=2130055733]
+script = ExtResource("1_xqmqg")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1507554105]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2048587840]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_6dom6")
 animation = &"basic"
 autoplay = "basic"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1111744265]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=218335406]
 position = Vector2(-2, 0)
 shape = SubResource("CapsuleShape2D_tivsa")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=967117267]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=254534769]
 position = Vector2(-2, 12)
 shape = SubResource("RectangleShape2D_xbcdo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

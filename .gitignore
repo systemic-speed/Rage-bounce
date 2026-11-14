@@ -1,0 +1,23 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot-specific
+.import/
+export.cfg
+export_credentials.cfg
+
+# Mono / C#
+.mono/
+data_*/
+mono_crash.*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Local/editor state
+.vscode/
+.idea/

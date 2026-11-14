@@ -4,6 +4,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -900.0
 
+var alive: bool = true
+
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var jump: AudioStreamPlayer2D = $Jump
 
@@ -39,3 +41,8 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = false
 	if direction == -1.0:
 		animated_sprite_2d.flip_h = true
+		
+
+func die() -> void:
+	animated_sprite_2d.animation = "dead"
+	alive = false
