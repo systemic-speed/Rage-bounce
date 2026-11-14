@@ -10,3 +10,13 @@ res://scenes/fire.tscn
 res://scenes/fire.gd
 res://scenes/main.gd
 res://scripts/fire.gd
+res://scenes/node_2d.gd
+res://scripts/main.gd
+res://scenes/levels/level_1.tscn
+res://scripts/lucky_block.gd
+res://scenes/lucky_block.tscn
+res://scenes/level_exit.tscn
+res://scripts/level_exit.gd
+res://scripts/end_screen.gd
+res://scripts/menu.gd
+res://scenes/menu.tscn

@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dbf81faa36lqe" path="res://assets/imgs/platforms/1_Industrial_Tileset_1C.png" id="2_wjk5u"]
 [ext_resource type="PackedScene" uid="uid://dfrfdu1inqlg0" path="res://scenes/fire.tscn" id="3_osc7o"]
 [ext_resource type="Texture2D" uid="uid://bcg383q1cor4y" path="res://assets/imgs/platforms/240_F_1763880074_6QJR9z1SoMxtvEf7WoJnDVIjpUE7avRm.jpg" id="3_xy1qu"]
+[ext_resource type="PackedScene" path="res://scenes/level_exit.tscn" id="4_exit"]
+[ext_resource type="PackedScene" path="res://scenes/lucky_block.tscn" id="5_lucky"]
+[ext_resource type="PackedScene" path="res://scenes/bounce_pad.tscn" id="6_pad"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihfcg"]
 texture = ExtResource("2_wjk5u")
@@ -116,3 +119,18 @@ position = Vector2(597, 500)
 
 [node name="Spikes6" parent="fire" unique_id=2068692825 instance=ExtResource("3_osc7o")]
 position = Vector2(561, 505)
+
+[node name="LevelExit" parent="." instance=ExtResource("4_exit")]
+position = Vector2(1200, 250)
+
+[node name="LuckyBlock" parent="." instance=ExtResource("5_lucky")]
+position = Vector2(420, 470)
+
+[node name="BouncePad1" parent="." instance=ExtResource("6_pad")]
+position = Vector2(520, 500)
+
+[node name="BouncePad2" parent="." instance=ExtResource("6_pad")]
+position = Vector2(760, 420)
+
+[node name="BouncePad3" parent="." instance=ExtResource("6_pad")]
+position = Vector2(980, 360)

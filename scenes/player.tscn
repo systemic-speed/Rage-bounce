@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://2yf0e0ilurfg" path="res://assets/imgs/character/Anim_Robot_Idle1_v1.1_spritesheet.png" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://cdoyldfqw6qta" path="res://assets/imgs/character/Anim_Robot_Jump1_v1.1_spritesheet.png" id="2_dqkch"]
 [ext_resource type="Texture2D" uid="uid://b6ua8jp83x4iu" path="res://assets/imgs/character/Anim_Robot_Walk1_v1.1_spritesheet.png" id="3_qlg0r"]
-[ext_resource type="AudioStream" uid="uid://b7ko8slfv03qk" path="res://assets/sounds/lumora_studios-pixel-jump-319167.mp3" id="5_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://b7ko8slfv03qk" path="res://assets/sounds/jump.mp3" id="5_qlg0r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_04qyp"]
 atlas = ExtResource("1_qhqgy")

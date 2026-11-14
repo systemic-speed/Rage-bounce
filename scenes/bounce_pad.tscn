@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/bounce_pad.gd" id="1_bp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bp"]
+size = Vector2(48, 14)
+
+[node name="BouncePad" type="Area2D"]
+script = ExtResource("1_bp")
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="Base" type="ColorRect" parent="Visual"]
+offset_left = -24.0
+offset_top = -4.0
+offset_right = 24.0
+offset_bottom = 8.0
+color = Color(0.2, 0.25, 0.35, 1)
+
+[node name="Top" type="ColorRect" parent="Visual"]
+offset_left = -22.0
+offset_top = -8.0
+offset_right = 22.0
+offset_bottom = -2.0
+color = Color(0.25, 0.95, 0.45, 1)
+
+[node name="Stripe1" type="ColorRect" parent="Visual"]
+offset_left = -14.0
+offset_top = -7.0
+offset_right = -8.0
+offset_bottom = -3.0
+color = Color(0.9, 1, 0.9, 0.8)
+
+[node name="Stripe2" type="ColorRect" parent="Visual"]
+offset_left = -2.0
+offset_top = -7.0
+offset_right = 4.0
+offset_bottom = -3.0
+color = Color(0.9, 1, 0.9, 0.8)
+
+[node name="Stripe3" type="ColorRect" parent="Visual"]
+offset_left = 10.0
+offset_top = -7.0
+offset_right = 16.0
+offset_bottom = -3.0
+color = Color(0.9, 1, 0.9, 0.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_bp")
