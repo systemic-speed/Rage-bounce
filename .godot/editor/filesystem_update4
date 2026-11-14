@@ -20,3 +20,5 @@ res://scripts/level_exit.gd
 res://scripts/end_screen.gd
 res://scripts/menu.gd
 res://scenes/menu.tscn
+res://scenes/bounce_pad.tscn
+res://scenes/end_screen.tscn

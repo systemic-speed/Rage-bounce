@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://cb3al4ye7u7d1"]
+[gd_scene format=4 uid="uid://dls8lq25de4fv"]
 
 [ext_resource type="Texture2D" uid="uid://dbf81faa36lqe" path="res://assets/imgs/platforms/1_Industrial_Tileset_1C.png" id="2_wjk5u"]
 [ext_resource type="PackedScene" uid="uid://dfrfdu1inqlg0" path="res://scenes/fire.tscn" id="3_osc7o"]

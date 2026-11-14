@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene format=3 uid="uid://c3sbd3d6cucrq"]
 
-[ext_resource type="Script" path="res://scripts/end_screen.gd" id="1_end"]
+[ext_resource type="Script" uid="uid://clhwnie6aotdx" path="res://scripts/end_screen.gd" id="1_end"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
 bg_color = Color(0.08, 0.16, 0.14, 0.93)
@@ -16,7 +16,7 @@ corner_radius_bottom_left = 18
 shadow_color = Color(0, 0, 0, 0.35)
 shadow_size = 12
 
-[node name="EndScreen" type="Control"]
+[node name="EndScreen" type="Control" unique_id=1622774197]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,25 +25,29 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_end")
 
-[node name="Bg" type="ColorRect" parent="."]
+[node name="Bg" type="ColorRect" parent="." unique_id=719875102]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -7.0
+offset_right = 114.0
+offset_bottom = -18.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.03, 0.09, 0.08, 1)
 
-[node name="BgAccent1" type="ColorRect" parent="."]
+[node name="BgAccent1" type="ColorRect" parent="." unique_id=1164723152]
 layout_mode = 0
-offset_left = -80.0
-offset_top = 360.0
-offset_right = 560.0
-offset_bottom = 760.0
+offset_left = 41.0
+offset_top = 355.00003
+offset_right = 681.0
+offset_bottom = 755.0
 rotation = -0.20944
 color = Color(0.15, 0.6, 0.45, 0.16)
 
-[node name="BgAccent2" type="ColorRect" parent="."]
+[node name="BgAccent2" type="ColorRect" parent="." unique_id=2102534413]
 layout_mode = 0
 offset_left = 700.0
 offset_top = -100.0
@@ -52,32 +56,36 @@ offset_bottom = 260.0
 rotation = 0.20944
 color = Color(0.9, 0.75, 0.25, 0.1)
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=999686434]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = -1
+anchor_right = 1.075
 anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = 4.0
+offset_right = 9.599976
+offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="PanelContainer" parent="CenterContainer"]
+[node name="Panel" type="PanelContainer" parent="CenterContainer" unique_id=1271092032]
 custom_minimum_size = Vector2(540, 380)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
 
-[node name="Margin" type="MarginContainer" parent="CenterContainer/Panel"]
+[node name="Margin" type="MarginContainer" parent="CenterContainer/Panel" unique_id=18780501]
 layout_mode = 2
 theme_override_constants/margin_left = 28
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 28
 theme_override_constants/margin_bottom = 24
 
-[node name="VBox" type="VBoxContainer" parent="CenterContainer/Panel/Margin"]
+[node name="VBox" type="VBoxContainer" parent="CenterContainer/Panel/Margin" unique_id=270666538]
 layout_mode = 2
 theme_override_constants/separation = 14
 alignment = 1
 
-[node name="Title" type="Label" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="Title" type="Label" parent="CenterContainer/Panel/Margin/VBox" unique_id=1593743648]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.92, 1, 0.96, 1)
 theme_override_colors/font_outline_color = Color(0.1, 0.45, 0.3, 0.9)
@@ -86,37 +94,37 @@ theme_override_font_sizes/font_size = 46
 text = "Level Complete!"
 horizontal_alignment = 1
 
-[node name="Subtitle" type="Label" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="Subtitle" type="Label" parent="CenterContainer/Panel/Margin/VBox" unique_id=1061639951]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.8, 0.98, 0.88, 1)
 theme_override_font_sizes/font_size = 20
 text = "You bounced through every challenge."
 horizontal_alignment = 1
 
-[node name="Hint" type="Label" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="Hint" type="Label" parent="CenterContainer/Panel/Margin/VBox" unique_id=598116661]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.8, 0.9, 0.86, 0.95)
 text = "Thanks for playing Rage Bounce."
 horizontal_alignment = 1
 
-[node name="Spacer" type="Control" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="Spacer" type="Control" parent="CenterContainer/Panel/Margin/VBox" unique_id=1650842607]
 custom_minimum_size = Vector2(0, 8)
 layout_mode = 2
 
-[node name="RestartButton" type="Button" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="RestartButton" type="Button" parent="CenterContainer/Panel/Margin/VBox" unique_id=270655623]
 custom_minimum_size = Vector2(260, 46)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 20
 text = "Play Again"
 
-[node name="MenuButton" type="Button" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="MenuButton" type="Button" parent="CenterContainer/Panel/Margin/VBox" unique_id=1167069660]
 custom_minimum_size = Vector2(260, 42)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Main Menu"
 
-[node name="QuitButton" type="Button" parent="CenterContainer/Panel/Margin/VBox"]
+[node name="QuitButton" type="Button" parent="CenterContainer/Panel/Margin/VBox" unique_id=204280229]
 custom_minimum_size = Vector2(260, 42)
 layout_mode = 2
 size_flags_horizontal = 4

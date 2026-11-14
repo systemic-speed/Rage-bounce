@@ -7,12 +7,17 @@ var _base_visual_y: float = 0.0
 var _time: float = 0.0
 
 @onready var visual: Node2D = get_node_or_null("Visual")
+@onready var reward_popup: Node2D = get_node_or_null("RewardPopup")
+@onready var reward_label: Label = get_node_or_null("RewardPopup/RewardLabel")
+@onready var reward_icon: Sprite2D = get_node_or_null("RewardPopup/RewardIcon")
 
 
 func _ready() -> void:
 	body_entered.connect(_on_body_entered)
 	if visual:
 		_base_visual_y = visual.position.y
+	if reward_popup:
+		reward_popup.visible = false
 
 
 func _process(delta: float) -> void:
@@ -42,12 +47,14 @@ func _on_body_entered(body: Node) -> void:
 			else:
 				body.set("bounce_enabled", true)
 				body.set("bounce_tuning_enabled", true)
+			_show_reward("BOUNCE!", Color(0.5, 1, 0.6, 1))
 			print("Lucky Block: bounce restored. Anchors left: ", body.reset_anchors, " (use ]/[ or +/- to adjust bounce)")
 		else:
 			if body.has_method("restore_default_controls"):
 				body.restore_default_controls()
 			elif body.has_method("restore_defaults"):
 				body.restore_defaults()
+			_show_reward("CONTROLS!", Color(0.6, 0.9, 1, 1))
 			print("Lucky Block: controls restored. Anchors left: ", body.reset_anchors)
 
 		if consume_on_use:
@@ -65,6 +72,7 @@ func _on_body_entered(body: Node) -> void:
 			set_deferred("monitorable", false)
 	else:
 		# Out of anchors - no benefit applied.
+		_show_reward("EMPTY", Color(1, 0.5, 0.5, 1))
 		print("Lucky Block: no anchors left. Nothing changed.")
 		if visual:
 			var original_modulate := visual.modulate
@@ -78,4 +86,25 @@ func _on_body_entered(body: Node) -> void:
 			if is_instance_valid(visual):
 				visual.position = original_pos
 				visual.modulate = original_modulate
+
+
+func _show_reward(text: String, tint: Color) -> void:
+	if not reward_popup:
+		return
+	reward_popup.visible = true
+	reward_popup.modulate = Color(1, 1, 1, 1)
+	reward_popup.position = Vector2(0, -34)
+	if reward_label:
+		reward_label.text = text
+		reward_label.modulate = tint
+	if reward_icon:
+		reward_icon.modulate = tint
+	var t := create_tween()
+	t.tween_property(reward_popup, "position", Vector2(0, -58), 0.45).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	t.parallel().tween_property(reward_popup, "modulate:a", 0.0, 0.45).set_delay(0.15)
+	t.tween_callback(func():
+		if is_instance_valid(reward_popup):
+			reward_popup.visible = false
+			reward_popup.modulate = Color(1, 1, 1, 1)
+	)
 
