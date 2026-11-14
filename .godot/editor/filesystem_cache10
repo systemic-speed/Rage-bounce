@@ -1,0 +1,11 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1794633473
+README.md::TextFile::-1::1794632049::0::1::::<><><>0<>0<><>::
+the_mountain-gaming-rock-138617.mp3::AudioStreamMP3::2831201286055031705::1794633473::1794633476::1::::<><><>0<>0<>544936ab2175bc6609ef43c747f20763<>res://.godot/imported/the_mountain-gaming-rock-138617.mp3-d00f640b850747ed7ac4146f44ea3608.mp3str::
+::res://assets/::1794631379
+::res://assets/imgs/::1794632073
+Anim_Robot_Idle1_v1.1_spritesheet.png::CompressedTexture2D::1944992323228263684::1794632049::1794632067::1::::<><><>0<>0<>fb1095735e975a2fb5f837a2f3d05942<>res://.godot/imported/Anim_Robot_Idle1_v1.1_spritesheet.png-2facb74f68e91a77450d1830e3ece8e9.ctex::
+Anim_Robot_Jump1_v1.1_spritesheet.png::CompressedTexture2D::5013786204468161374::1794632049::1794632071::1::::<><><>0<>0<>778e4bcb73034fd576b9318bf54bcfd5<>res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-3ed35f700730c4b3535c055debe6a988.ctex::
+Anim_Robot_Walk1_v1.1_spritesheet.png::CompressedTexture2D::4603621820172103792::1794632049::1794632073::1::::<><><>0<>0<>ee774ba0da8cbb0a81938e97ff2d3487<>res://.godot/imported/Anim_Robot_Walk1_v1.1_spritesheet.png-e4a3d4cf6ffc1d9d91a70b66296b0145.ctex::
+::res://scenes/::1794633329
+node_2d.tscn::PackedScene::3885939256838585571::1794633329::0::1::::<><><>0<>0<><>::uid://2yf0e0ilurfg::::res://assets/imgs/Anim_Robot_Idle1_v1.1_spritesheet.png<>uid://cdoyldfqw6qta::::res://assets/imgs/Anim_Robot_Jump1_v1.1_spritesheet.png<>uid://b6ua8jp83x4iu::::res://assets/imgs/Anim_Robot_Walk1_v1.1_spritesheet.png
