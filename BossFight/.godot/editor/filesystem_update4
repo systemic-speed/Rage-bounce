@@ -1,0 +1,4 @@
+res://scenes/node_2d.tscn
+res://demon_slime.tscn
+res://demon_slime.gd
+res://scenes/character_body_2d.gd

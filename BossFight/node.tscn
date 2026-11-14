@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ovwkdj1aod7x"]
+
+[node name="Node" type="Node" unique_id=1485741044]
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=449636629]
+anchors_preset = -1
+anchor_left = -0.031000001
+offset_left = -360.288
+offset_top = -172.0
+offset_right = -293.0
+offset_bottom = -145.0
+value = 100.0
+show_percentage = false
