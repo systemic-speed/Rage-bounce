@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/aditya_spike_level.gd" id="1_lvl"]
+[ext_resource type="Texture2D" path="res://assets/imgs/aditya_spike/240_F_1763880074_6QJR9z1SoMxtvEf7WoJnDVIjpUE7avRm.jpg" id="2_bg"]
+[ext_resource type="Script" path="res://scripts/aditya_world_generator.gd" id="3_wg"]
+[ext_resource type="PackedScene" path="res://scenes/level_exit.tscn" id="4_exit"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(50000, 64)
+
+[node name="LevelRoot" type="Node2D"]
+script = ExtResource("1_lvl")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 1400.0
+offset_bottom = 700.0
+texture = ExtResource("2_bg")
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(180, 250)
+enabled = true
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 46.0
+text = "SCORE: 0"
+
+[node name="WorldGenerator" type="Node2D" parent="."]
+script = ExtResource("3_wg")
+enabled = false
+
+[node name="LevelExit" parent="." instance=ExtResource("4_exit")]
+position = Vector2(3600, 290)
