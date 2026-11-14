@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://taxtqy0lib1e"
-path="res://.godot/imported/back_cave.png-a1bd9d895620b342b7dbd2810b73684d.ctex"
+uid="uid://b8sdtpjyn41kl"
+path="res://.godot/imported/back_cave.png-8ae46c08b763947727281d266cc47a90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/back_cave.png"
-dest_files=["res://.godot/imported/back_cave.png-a1bd9d895620b342b7dbd2810b73684d.ctex"]
+source_file="res://BossFight/back_cave.png"
+dest_files=["res://.godot/imported/back_cave.png-8ae46c08b763947727281d266cc47a90.ctex"]
 
 [params]
 

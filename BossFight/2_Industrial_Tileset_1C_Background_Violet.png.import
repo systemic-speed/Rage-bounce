@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtu2ix7q0krn5"
-path="res://.godot/imported/2_Industrial_Tileset_1C_Background_Violet.png-0c2557162d73c90bdd04b780076d9687.ctex"
+uid="uid://cem838d01khh3"
+path="res://.godot/imported/2_Industrial_Tileset_1C_Background_Violet.png-ebbe49fe44f8cc225fe141feb6435262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/2_Industrial_Tileset_1C_Background_Violet.png"
-dest_files=["res://.godot/imported/2_Industrial_Tileset_1C_Background_Violet.png-0c2557162d73c90bdd04b780076d9687.ctex"]
+source_file="res://BossFight/2_Industrial_Tileset_1C_Background_Violet.png"
+dest_files=["res://.godot/imported/2_Industrial_Tileset_1C_Background_Violet.png-ebbe49fe44f8cc225fe141feb6435262.ctex"]
 
 [params]
 

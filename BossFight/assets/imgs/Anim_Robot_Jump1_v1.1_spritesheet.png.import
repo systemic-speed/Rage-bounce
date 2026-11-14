@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdoyldfqw6qta"
-path="res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-ba501d2bcdad794bdb562dcf102762de.ctex"
+uid="uid://ba8n8r881oqrk"
+path="res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-32151d2072389c52e81b83b7da5011c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/assets/imgs/Anim_Robot_Jump1_v1.1_spritesheet.png"
-dest_files=["res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-ba501d2bcdad794bdb562dcf102762de.ctex"]
+source_file="res://BossFight/assets/imgs/Anim_Robot_Jump1_v1.1_spritesheet.png"
+dest_files=["res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-32151d2072389c52e81b83b7da5011c2.ctex"]
 
 [params]
 

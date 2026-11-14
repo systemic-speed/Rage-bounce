@@ -2,13 +2,13 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://0dbxqru8csmp"
-path="res://.godot/imported/jonasblakewood-fight-fight-music-595521.mp3-cbc68a295d9831b3fdf06adbc375ff4a.mp3str"
+uid="uid://3inch6ivkjpi"
+path="res://.godot/imported/jonasblakewood-fight-fight-music-595521.mp3-fd174e99adedb3983503938cbfabc1e7.mp3str"
 
 [deps]
 
-source_file="res://bossfight/jonasblakewood-fight-fight-music-595521.mp3"
-dest_files=["res://.godot/imported/jonasblakewood-fight-fight-music-595521.mp3-cbc68a295d9831b3fdf06adbc375ff4a.mp3str"]
+source_file="res://BossFight/jonasblakewood-fight-fight-music-595521.mp3"
+dest_files=["res://.godot/imported/jonasblakewood-fight-fight-music-595521.mp3-fd174e99adedb3983503938cbfabc1e7.mp3str"]
 
 [params]
 

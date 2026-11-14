@@ -2,13 +2,13 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://bglpqbdkyxiq8"
-path="res://.godot/imported/the_mountain-gaming-rock-138617.mp3-0982f8c2ed4c718c067b6272013298e0.mp3str"
+uid="uid://b4ylo682wg0b7"
+path="res://.godot/imported/the_mountain-gaming-rock-138617.mp3-029c79f86a64f5e2b14e0d90d8202b76.mp3str"
 
 [deps]
 
-source_file="res://bossfight/the_mountain-gaming-rock-138617.mp3"
-dest_files=["res://.godot/imported/the_mountain-gaming-rock-138617.mp3-0982f8c2ed4c718c067b6272013298e0.mp3str"]
+source_file="res://BossFight/the_mountain-gaming-rock-138617.mp3"
+dest_files=["res://.godot/imported/the_mountain-gaming-rock-138617.mp3-029c79f86a64f5e2b14e0d90d8202b76.mp3str"]
 
 [params]
 

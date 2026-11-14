@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cut08phmc6fw0"
-path="res://.godot/imported/3_Far_Background_Tile.png-52e207d274dc08e85ffbd077d51c9a22.ctex"
+uid="uid://bsn76tgystjcx"
+path="res://.godot/imported/3_Far_Background_Tile.png-f1272a1e855048811cb38799c2a42d09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/3_Far_Background_Tile.png"
-dest_files=["res://.godot/imported/3_Far_Background_Tile.png-52e207d274dc08e85ffbd077d51c9a22.ctex"]
+source_file="res://BossFight/3_Far_Background_Tile.png"
+dest_files=["res://.godot/imported/3_Far_Background_Tile.png-f1272a1e855048811cb38799c2a42d09.ctex"]
 
 [params]
 

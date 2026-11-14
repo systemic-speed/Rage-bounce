@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3810s0c2wo38"
-path="res://.godot/imported/Dragon Sprite Parts.png-fc858839942ed407724a914021bb39fd.ctex"
+uid="uid://b2bkq3mx7mjel"
+path="res://.godot/imported/Dragon Sprite Parts.png-cfcc1a35cab4e26009fa8437d5c61daa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/Dragon Sprite Parts.png"
-dest_files=["res://.godot/imported/Dragon Sprite Parts.png-fc858839942ed407724a914021bb39fd.ctex"]
+source_file="res://BossFight/Dragon Sprite Parts.png"
+dest_files=["res://.godot/imported/Dragon Sprite Parts.png-cfcc1a35cab4e26009fa8437d5c61daa.ctex"]
 
 [params]
 

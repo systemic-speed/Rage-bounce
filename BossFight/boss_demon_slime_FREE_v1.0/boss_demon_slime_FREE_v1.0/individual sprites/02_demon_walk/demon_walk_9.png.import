@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db3og8hgauwaf"
-path="res://.godot/imported/demon_walk_9.png-6a8b201df220fe26c346f6df24337a34.ctex"
+uid="uid://dlajobfsdyln0"
+path="res://.godot/imported/demon_walk_9.png-c123f6e0ec7273fd34995d0b51e4e1d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_9.png"
-dest_files=["res://.godot/imported/demon_walk_9.png-6a8b201df220fe26c346f6df24337a34.ctex"]
+source_file="res://BossFight/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_9.png"
+dest_files=["res://.godot/imported/demon_walk_9.png-c123f6e0ec7273fd34995d0b51e4e1d7.ctex"]
 
 [params]
 

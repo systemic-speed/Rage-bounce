@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1lvhjfxtg3rh"
-path="res://.godot/imported/demon_death_5.png-6bbbd802ef2883d54cc86095d57be430.ctex"
+uid="uid://j0cgwmob0o1b"
+path="res://.godot/imported/demon_death_5.png-926be10046c28e82c0c01c90479229a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/05_demon_death/demon_death_5.png"
-dest_files=["res://.godot/imported/demon_death_5.png-6bbbd802ef2883d54cc86095d57be430.ctex"]
+source_file="res://BossFight/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/05_demon_death/demon_death_5.png"
+dest_files=["res://.godot/imported/demon_death_5.png-926be10046c28e82c0c01c90479229a5.ctex"]
 
 [params]
 

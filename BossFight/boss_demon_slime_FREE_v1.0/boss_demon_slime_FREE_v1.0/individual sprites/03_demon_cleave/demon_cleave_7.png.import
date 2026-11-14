@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmt50cl6gf87t"
-path="res://.godot/imported/demon_cleave_7.png-0a825029ece235733af8a62d261ddbdc.ctex"
+uid="uid://6qwhbkl8cs36"
+path="res://.godot/imported/demon_cleave_7.png-6ddeef804df1f22dd0f7ac924752df98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bossfight/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/03_demon_cleave/demon_cleave_7.png"
-dest_files=["res://.godot/imported/demon_cleave_7.png-0a825029ece235733af8a62d261ddbdc.ctex"]
+source_file="res://BossFight/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/03_demon_cleave/demon_cleave_7.png"
+dest_files=["res://.godot/imported/demon_cleave_7.png-6ddeef804df1f22dd0f7ac924752df98.ctex"]
 
 [params]
 
