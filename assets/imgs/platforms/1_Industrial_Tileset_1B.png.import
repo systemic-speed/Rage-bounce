@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6ua8jp83x4iu"
-path="res://.godot/imported/Anim_Robot_Walk1_v1.1_spritesheet.png-e4a3d4cf6ffc1d9d91a70b66296b0145.ctex"
+uid="uid://bxv33fpvcs05d"
+path="res://.godot/imported/1_Industrial_Tileset_1B.png-d99601903db7016de7426404dcd7d891.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imgs/Anim_Robot_Walk1_v1.1_spritesheet.png"
-dest_files=["res://.godot/imported/Anim_Robot_Walk1_v1.1_spritesheet.png-e4a3d4cf6ffc1d9d91a70b66296b0145.ctex"]
+source_file="res://assets/imgs/platforms/1_Industrial_Tileset_1B.png"
+dest_files=["res://.godot/imported/1_Industrial_Tileset_1B.png-d99601903db7016de7426404dcd7d891.ctex"]
 
 [params]
 
