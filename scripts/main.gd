@@ -6,6 +6,7 @@ extends Node2D
 	preload("res://scenes/levels/level_2.tscn"),
 	preload("res://scenes/levels/level_3.tscn"),
 	preload("res://scenes/levels/level_4.tscn"),
+	preload("res://scenes/levels/level_aditya.tscn"),
 ]
 @export var player_spawn_position: Vector2 = Vector2(46, 305)
 
