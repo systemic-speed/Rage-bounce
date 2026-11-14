@@ -169,6 +169,29 @@ func _process_random_control_glitch(delta: float) -> void:
 	_random_glitch_timer = randf_range(10.0, 20.0)
 
 
+func _level_display_name(index: int) -> String:
+	if index < 0 or index >= levels.size() or not levels[index]:
+		return "Unknown"
+	var path := levels[index].resource_path
+	match path.get_file():
+		"level_0.tscn":
+			return "Level 1"
+		"level_1.tscn":
+			return "Level 2"
+		"level_2.tscn":
+			return "Level 3"
+		"level_3.tscn":
+			return "Level 4"
+		"level_4.tscn":
+			return "Level 5"
+		"level_spike_run.tscn":
+			return "Spike Run"
+		"level_boss_fight.tscn":
+			return "Boss Fight"
+		_:
+			return path.get_file().get_basename().replace("_", " ").capitalize()
+
+
 func _update_hud() -> void:
 	if not controls_label:
 		return
@@ -177,7 +200,10 @@ func _update_hud() -> void:
 	var tuning = "on" if player and player.get("bounce_tuning_enabled") else "off"
 	var jump_vel = player.get("jump_velocity") if player and ("jump_velocity" in player) else "?"
 	var controls_state = player.get_control_state_text() if player and player.has_method("get_control_state_text") else "normal"
-	controls_label.text = "BOUNCE to survive! Move: A/Left, D/Right   Jump/Bounce: Space/Enter   Restart: R   Levels: N/P\n" + \
+	var level_name := _level_display_name(current_level_index)
+	var level_number := mini(current_level_index + 1, levels.size())
+	controls_label.text = "Level %d/%d: %s   (consecutive progression)\n" % [level_number, levels.size(), level_name] + \
+		"Move: A/Left, D/Right   Jump/Bounce: Space/Enter   Restart: R   Levels: N/P\n" + \
 		"Controls can glitch randomly or from Lucky Blocks/triggers. Lucky Block (1 anchor): restore controls, restore bounce, or glitch\n" + \
 		"After bounce: ] / = / Numpad+ = higher jump,   [ / - / Numpad- = lower jump\n" + \
 		"Anchors: %s   Bounce: %s   Bounce tuning: %s   Jump velocity: %s   Controls: %s" % [str(anchors), str(bounce), str(tuning), str(jump_vel), str(controls_state)]
