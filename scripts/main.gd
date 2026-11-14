@@ -7,6 +7,7 @@ extends Node2D
 	preload("res://scenes/levels/level_3.tscn"),
 	preload("res://scenes/levels/level_4.tscn"),
 	preload("res://scenes/levels/level_spike_run.tscn"),
+	preload("res://scenes/levels/level_boss_fight.tscn"),
 ]
 @export var player_spawn_position: Vector2 = Vector2(46, 305)
 
@@ -22,7 +23,17 @@ var _random_glitch_timer: float = 0.0
 
 func _ready() -> void:
 	randomize()
-	load_level(current_level_index)
+	var start_index := current_level_index
+	var gs = get_node_or_null("/root/GameState")
+	if gs and gs.get("resume_from_boss_fight"):
+		gs.resume_from_boss_fight = false
+		if gs.get("boss_fight_completed"):
+			start_index = int(gs.get("next_level_after_boss"))
+		else:
+			# Return to boss fight level to retry if failed/left.
+			start_index = max(0, int(gs.get("next_level_after_boss")) - 1)
+		gs.boss_fight_completed = false
+	load_level(start_index)
 	_update_hud()
 
 
@@ -53,6 +64,19 @@ func load_level(index: int) -> void:
 
 	_is_transitioning = false
 	current_level_index = wrapi(index, 0, levels.size())
+
+	# Special integrated boss fight level runs as its own scene.
+	var level_path := ""
+	if levels[current_level_index]:
+		level_path = levels[current_level_index].resource_path
+	if level_path.ends_with("level_boss_fight.tscn"):
+		var gs = get_node_or_null("/root/GameState")
+		if gs:
+			gs.next_level_after_boss = current_level_index + 1
+			gs.resume_from_boss_fight = true
+			gs.boss_fight_completed = false
+		get_tree().change_scene_to_file("res://BossFight/scenes/node_2d.tscn")
+		return
 
 	if current_level and is_instance_valid(current_level):
 		current_level.queue_free()
