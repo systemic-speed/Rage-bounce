@@ -1,5 +1,8 @@
 TileMapLayer
+Sprite2D
+ColorRect
 TileMap
+StaticBody2D
 Camera2D
 CollisionShape2D
 AnimatedSprite2D

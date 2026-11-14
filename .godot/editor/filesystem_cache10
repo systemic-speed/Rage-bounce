@@ -1,14 +1,17 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1794634658
+::res://::1794640554
+240_F_1763880074_6QJR9z1SoMxtvEf7WoJnDVIjpUE7avRm.jpg::CompressedTexture2D::2540945141045086342::1794640555::1794640557::1::::<><><>0<>0<>30035863ac465cec01095c99a085fdc4<>res://.godot/imported/240_F_1763880074_6QJR9z1SoMxtvEf7WoJnDVIjpUE7avRm.jpg-2e1b9bfc46ec4b84f8e55bb3332f0dc5.ctex::
+Dragon Sprite Parts.png::CompressedTexture2D::2035036358576676593::1794636919::1794636946::1::::<><><>0<>0<>dd91348f7712a493cbc99872797912f3<>res://.godot/imported/Dragon Sprite Parts.png-2ea8398c390b33290c8b56c5d5a402d0.ctex::
+level_1.tscn::PackedScene::4900853992348649888::1794639310::0::1::::<><><>0<>0<><>::uid://cly2qh6padjk0::::res://scenes/player.tscn<>uid://c38f4wmngjl0k::::res://assets/imgs/platforms/1_Industrial_Tileset_1.png
+main.tscn::PackedScene::3496725714709955902::1794637630::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1794632049::0::1::::<><><>0<>0<><>::
-the_mountain-gaming-rock-138617.mp3::AudioStreamMP3::2831201286055031705::1794633473::1794633476::1::::<><><>0<>0<>544936ab2175bc6609ef43c747f20763<>res://.godot/imported/the_mountain-gaming-rock-138617.mp3-d00f640b850747ed7ac4146f44ea3608.mp3str::
-::res://assets/::1794634512
+::res://assets/::1794639063
 ::res://assets/imgs/::1794634512
 ::res://assets/imgs/charecter/::1794634512
 Anim_Robot_Idle1_v1.1_spritesheet.png::CompressedTexture2D::1944992323228263684::1794632049::1794634043::1::::<><><>0<>0<>75a8a73af1462221f19da9cfa26a2d14<>res://.godot/imported/Anim_Robot_Idle1_v1.1_spritesheet.png-42f90da9de5226181e3d646fbe59902a.ctex::
 Anim_Robot_Jump1_v1.1_spritesheet.png::CompressedTexture2D::5013786204468161374::1794632049::1794634043::1::::<><><>0<>0<>7b56ad17d9757f1f0758628c658dc5b3<>res://.godot/imported/Anim_Robot_Jump1_v1.1_spritesheet.png-cce94da2585b4de42ae5251d715f51d4.ctex::
 Anim_Robot_Walk1_v1.1_spritesheet.png::CompressedTexture2D::4603621820172103792::1794632049::1794634043::1::::<><><>0<>0<>21290469b094d09e177663d7a0e443be<>res://.godot/imported/Anim_Robot_Walk1_v1.1_spritesheet.png-45746ab67b7edfee0d741693315c814e.ctex::
-::res://assets/imgs/platforms/::1794634513
+::res://assets/imgs/platforms/::1794639095
 0_Template_Tileset.png::CompressedTexture2D::4184847347075562396::1794633967::1794634073::1::::<><><>0<>0<>680e712b968ef2bcb512309462e61197<>res://.godot/imported/0_Template_Tileset.png-d3cd460e1d160c2aaf09914add2c7ed7.ctex::
 1_Industrial_Tileset_1.png::CompressedTexture2D::6806610002772557776::1794633967::1794634073::1::::<><><>0<>0<>a467c9e90c9d8a8b07113964a9a3d49c<>res://.godot/imported/1_Industrial_Tileset_1.png-93ffad168b279b0115750204ac2367c3.ctex::
 1_Industrial_Tileset_1B.png::CompressedTexture2D::4045866384976270195::1794633967::1794634073::1::::<><><>0<>0<>d30d42aebe44b2f17d5012ee6ff4fd8b<>res://.godot/imported/1_Industrial_Tileset_1B.png-d99601903db7016de7426404dcd7d891.ctex::
@@ -17,5 +20,10 @@ Anim_Robot_Walk1_v1.1_spritesheet.png::CompressedTexture2D::4603621820172103792:
 2_Industrial_Tileset_1C_Background_Violet.png::CompressedTexture2D::8535792538670630652::1794633967::1794634073::1::::<><><>0<>0<>558368feaf4891b65286714a0fb54249<>res://.godot/imported/2_Industrial_Tileset_1C_Background_Violet.png-ab45bad8f469db58112411ec743a24d6.ctex::
 2_Industrial_Tileset_1_Background.png::CompressedTexture2D::2348285269840979899::1794633967::1794634073::1::::<><><>0<>0<>74477093db0214b43aa5579b008f37f5<>res://.godot/imported/2_Industrial_Tileset_1_Background.png-88f81c3a8787ecfb3179b690b81c8e3b.ctex::
 3_Far_Background_Tile.png::CompressedTexture2D::6217419072705014513::1794633967::1794634073::1::::<><><>0<>0<>37402efc1739a8e9ebe63fb17ffb2f48<>res://.godot/imported/3_Far_Background_Tile.png-e0e66b173c514366b875a772fc73ba02.ctex::
-::res://scenes/::1794634513
-player.tscn::PackedScene::5596132061243213769::1794634424::0::1::::<><><>0<>0<><>::uid://2yf0e0ilurfg::::res://assets/imgs/charecter/Anim_Robot_Idle1_v1.1_spritesheet.png<>uid://cdoyldfqw6qta::::res://assets/imgs/charecter/Anim_Robot_Jump1_v1.1_spritesheet.png<>uid://b6ua8jp83x4iu::::res://assets/imgs/charecter/Anim_Robot_Walk1_v1.1_spritesheet.png
+::res://assets/sounds/::1794639096
+openmindaudio-japanese-gaming-boss-battle-music-624650.mp3::AudioStreamMP3::1870411835765085480::1794639086::1794639096::1::::<><><>0<>0<>9b0dbd4fd404097c2bcd3d4e333dbbbb<>res://.godot/imported/openmindaudio-japanese-gaming-boss-battle-music-624650.mp3-aff08249eae127d98146ffdc758e506d.mp3str::
+the_mountain-gaming-rock-138617.mp3::AudioStreamMP3::2831201286055031705::1794633473::1794639072::1::::<><><>0<>0<>1b990aadaaa458588f4281f1397d0584<>res://.godot/imported/the_mountain-gaming-rock-138617.mp3-4dc1cbe38d21ffbf2cecb4c88c4a8074.mp3str::
+::res://scenes/::1794637766
+player.tscn::PackedScene::5596132061243213769::1794637766::0::1::::<><><>0<>0<><>::uid://c07udaep1i34w::::res://scripts/player.gd<>uid://2yf0e0ilurfg::::res://assets/imgs/charecter/Anim_Robot_Idle1_v1.1_spritesheet.png<>uid://cdoyldfqw6qta::::res://assets/imgs/charecter/Anim_Robot_Jump1_v1.1_spritesheet.png<>uid://b6ua8jp83x4iu::::res://assets/imgs/charecter/Anim_Robot_Walk1_v1.1_spritesheet.png
+::res://scripts/::1794639847
+player.gd::GDScript::6594842250599810080::1794639847::0::1::::<>CharacterBody2D<><>0<>0<><>::
