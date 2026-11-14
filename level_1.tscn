@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cb3al4ye7u7d1"]
+
+[ext_resource type="PackedScene" uid="uid://cly2qh6padjk0" path="res://scenes/player.tscn" id="1_3hls8"]
+[ext_resource type="Script" uid="uid://3tfvt0glwr1s" path="res://level.gd" id="1_rka8t"]
+[ext_resource type="Script" uid="uid://c6uxxs7o2ms0x" path="res://scenes/player.gd" id="2_ihfcg"]
+[ext_resource type="Texture2D" uid="uid://bcg383q1cor4y" path="res://240_F_1763880074_6QJR9z1SoMxtvEf7WoJnDVIjpUE7avRm.jpg" id="3_hn12h"]
+[ext_resource type="Script" uid="uid://df5pf5rnhux3e" path="res://world_generator.gd" id="6_5hph3"]
+
+[node name="Level1" type="Node2D" unique_id=664454929]
+script = ExtResource("1_rka8t")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=624214763]
+offset_top = -328.0
+offset_right = 1146.0
+offset_bottom = 329.0
+texture = ExtResource("3_hn12h")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=457440910]
+position = Vector2(180, 304)
+scale = Vector2(3, 3)
+limit_left = 0
+limit_top = 0
+limit_bottom = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2080342003]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=1679653486]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Player" parent="." unique_id=1165101738 instance=ExtResource("1_3hls8")]
+position = Vector2(31.000008, 271)
+disable_mode = 1
+script = ExtResource("2_ihfcg")
+
+[node name="WorldGenerator" type="Node2D" parent="." unique_id=1185105438]
+script = ExtResource("6_5hph3")
