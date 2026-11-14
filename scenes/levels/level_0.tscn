@@ -122,7 +122,7 @@ position = Vector2(597, 500)
 position = Vector2(561, 505)
 
 [node name="LevelExit" parent="." unique_id=1260192919 instance=ExtResource("4_exit")]
-position = Vector2(1197, 192)
+position = Vector2(1200, 250)
 
 [node name="LuckyBlock" parent="." unique_id=1954865324 instance=ExtResource("5_lucky")]
 position = Vector2(420, 470)
