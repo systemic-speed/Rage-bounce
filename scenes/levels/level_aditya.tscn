@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://c3lvl40000001"]
+[gd_scene format=4 uid="uid://caditya000001"]
 
 [ext_resource type="Texture2D" uid="uid://dbf81faa36lqe" path="res://assets/imgs/platforms/1_Industrial_Tileset_1C.png" id="2_wjk5u"]
 [ext_resource type="PackedScene" uid="uid://dfrfdu1inqlg0" path="res://scenes/fire.tscn" id="3_osc7o"]
@@ -87,7 +87,7 @@ texture = ExtResource("2_wjk5u")
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_ihfcg")
 
-[node name="LevelRoot" type="Node2D" unique_id=664454929]
+[node name="LevelRoot" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1029722615]
 position = Vector2(0, -1)
@@ -104,37 +104,37 @@ centered = false
 [node name="fire" type="Node2D" parent="." unique_id=1693185112]
 
 [node name="Spikes" parent="fire" unique_id=275088813 instance=ExtResource("3_osc7o")]
-position = Vector2(258, 509)
+position = Vector2(320, 509)
 
 [node name="Spikes2" parent="fire" unique_id=1513532721 instance=ExtResource("3_osc7o")]
-position = Vector2(334, 509)
+position = Vector2(520, 509)
 
 [node name="Spikes3" parent="fire" unique_id=417824 instance=ExtResource("3_osc7o")]
-position = Vector2(298, 514)
+position = Vector2(720, 509)
 
 [node name="Spikes4" parent="fire" unique_id=399028317 instance=ExtResource("3_osc7o")]
-position = Vector2(521, 500)
+position = Vector2(920, 509)
 
 [node name="Spikes5" parent="fire" unique_id=1665130098 instance=ExtResource("3_osc7o")]
-position = Vector2(597, 500)
+position = Vector2(1040, 509)
 
 [node name="Spikes6" parent="fire" unique_id=2068692825 instance=ExtResource("3_osc7o")]
-position = Vector2(561, 505)
+position = Vector2(1120, 509)
 
 [node name="LevelExit" parent="." instance=ExtResource("4_exit")]
-position = Vector2(1180, 260)
+position = Vector2(1180, 300)
 
 [node name="LuckyBlock" parent="." instance=ExtResource("5_lucky")]
-position = Vector2(520, 470)
+position = Vector2(420, 450)
 
 [node name="BouncePad1" parent="." instance=ExtResource("6_pad")]
-position = Vector2(560, 500)
+position = Vector2(480, 500)
 
 [node name="BouncePad2" parent="." instance=ExtResource("6_pad")]
-position = Vector2(780, 420)
+position = Vector2(680, 500)
 
 [node name="BouncePad3" parent="." instance=ExtResource("6_pad")]
-position = Vector2(940, 350)
+position = Vector2(880, 500)
 
 [node name="ControlGlitch1" parent="." instance=ExtResource("7_glitch")]
 position = Vector2(600, 450)
