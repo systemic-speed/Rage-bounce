@@ -126,10 +126,11 @@ func _update_hud() -> void:
 	var bounce = "on" if player and player.get("bounce_enabled") else "off"
 	var tuning = "on" if player and player.get("bounce_tuning_enabled") else "off"
 	var jump_vel = player.get("jump_velocity") if player and ("jump_velocity" in player) else "?"
+	var controls_state = player.get_control_state_text() if player and player.has_method("get_control_state_text") else "normal"
 	controls_label.text = "BOUNCE to survive! Move: A/Left, D/Right   Jump/Bounce: Space/Enter   Restart: R   Levels: N/P\n" + \
-		"Use bounce pads and tuned jumps to traverse hazards. Lucky Block: 1 anchor -> controls OR bounce\n" + \
+		"Controls can glitch during play. Lucky Block: 1 anchor -> restore controls OR restore bounce\n" + \
 		"After bounce: ] / = / Numpad+ = higher jump,   [ / - / Numpad- = lower jump\n" + \
-		"Anchors: %s   Bounce: %s   Bounce tuning: %s   Jump velocity: %s" % [str(anchors), str(bounce), str(tuning), str(jump_vel)]
+		"Anchors: %s   Bounce: %s   Bounce tuning: %s   Jump velocity: %s   Controls: %s" % [str(anchors), str(bounce), str(tuning), str(jump_vel), str(controls_state)]
 
 
 

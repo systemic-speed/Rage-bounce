@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" path="res://scenes/level_exit.tscn" id="4_exit"]
 [ext_resource type="PackedScene" path="res://scenes/lucky_block.tscn" id="5_lucky"]
 [ext_resource type="PackedScene" path="res://scenes/bounce_pad.tscn" id="6_pad"]
+[ext_resource type="PackedScene" path="res://scenes/control_glitch.tscn" id="7_glitch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihfcg"]
 texture = ExtResource("2_wjk5u")
@@ -134,3 +135,12 @@ position = Vector2(780, 420)
 
 [node name="BouncePad3" parent="." instance=ExtResource("6_pad")]
 position = Vector2(940, 350)
+
+[node name="ControlGlitch1" parent="." instance=ExtResource("7_glitch")]
+position = Vector2(600, 450)
+
+[node name="ControlGlitch2" parent="." instance=ExtResource("7_glitch")]
+position = Vector2(820, 320)
+
+[node name="ControlGlitch3" parent="." instance=ExtResource("7_glitch")]
+position = Vector2(1000, 290)

@@ -17,6 +17,7 @@ var jump_velocity: float = DEFAULT_JUMP_VELOCITY
 var move_left_action := "ui_left"
 var move_right_action := "ui_right"
 var jump_action := "ui_accept"
+var control_mode: String = "normal"
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var jump: AudioStreamPlayer2D = $Jump
@@ -88,6 +89,38 @@ func restore_default_controls() -> void:
 	move_left_action = "ui_left"
 	move_right_action = "ui_right"
 	jump_action = "ui_accept"
+	control_mode = "normal"
+
+
+func apply_control_glitch(mode: String = "") -> void:
+	var chosen := mode
+	if chosen == "" or chosen == "random":
+		var modes := ["inverted", "jump_swapped", "chaos"]
+		chosen = modes[randi() % modes.size()]
+	match chosen:
+		"inverted":
+			move_left_action = "ui_right"
+			move_right_action = "ui_left"
+			jump_action = "ui_accept"
+			control_mode = "inverted"
+		"jump_swapped":
+			# Swap jump with move-right input to create a meaningful control change.
+			move_left_action = "ui_left"
+			move_right_action = "ui_accept"
+			jump_action = "ui_right"
+			control_mode = "jump_swapped"
+		"chaos":
+			move_left_action = "ui_accept"
+			move_right_action = "ui_left"
+			jump_action = "ui_right"
+			control_mode = "chaos"
+		"normal", _:
+			restore_default_controls()
+	print("Controls changed: ", control_mode)
+
+
+func get_control_state_text() -> String:
+	return control_mode
 
 
 func restore_bounce() -> void:
@@ -122,9 +155,7 @@ func _decrease_bounce() -> void:
 
 
 func invert_horizontal_controls() -> void:
-	var tmp := move_left_action
-	move_left_action = move_right_action
-	move_right_action = tmp
+	apply_control_glitch("inverted")
 
 
 func reset_run_state() -> void:
